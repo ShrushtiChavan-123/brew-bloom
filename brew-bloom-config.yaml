@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: brew-bloom-config
+data:
+  WEBSITE_NAME: "Brew & Bloom"
+  ENVIRONMENT: "Development"
+  LOCATION: "Pune"

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: brew-bloom-limitrange
+  namespace: brew-bloom-dev
+spec:
+  limits:
+  - type: Container
+    default:
+      cpu: "200m"
+      memory: "128Mi"
+    defaultRequest:
+      cpu: "100m"
+      memory: "64Mi"
+    max:
+      cpu: "500m"
+      memory: "512Mi"
+    min:
+      cpu: "50m"
+      memory: "32Mi"
+
